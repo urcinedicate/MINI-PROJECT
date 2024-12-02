@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css2?family=Kanit&display=swap);/*Kanit*/
+@import url(https://fonts.googleapis.com/css2?family=Carter+One&display=swap);/*Carter One*/
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Righteous&display=swap);/*Righteous*/
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap);/*Josefin Sans*/
+@import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);/*Karla*/
+
+*{
+    font-family: 'Karla';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    
+}
+
+/* navbar */
+ul{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    gap: 100px;
+    background: #01182d;
+    margin: auto;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration:none;
+    text-transform: uppercase;
+    padding: 0 10px;    
+} 
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+
+/* flex-box */
+.flex-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.card{
+   background: #153e64e0;
+   width: 400px;
+   height: 350px;
+   margin: 50px;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+   box-sizing: border-box;
+   padding: 20px;
+   border-radius: 1rem;
+   position: relative;
+   overflow: hidden;
+}
+
+.card:hover img {
+    transform: scale(1.2);
+    filter: blur(1px);
+}
+
+.card:hover .content {
+    transform: translate(0, -50%);
+}
+
+/* image */
+.img{
+    height: 300px;
+    width: 100%;
+    border-radius: 5px;
+    background-size: cover;
+    transition: 200ms ease-in-out transform,
+                200ms ease-in-out filter;
+}
+
+
+/* button */
+.btn {
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #050505;
+}
+
+.btn:hover {
+    background-color: #ffffffa9;
+}
+
+
+/* content */
+.foods {
+    text-align: center;
+    font-size: 6rem;
+    font-family: Kanit;
+    color: #06386a;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke:  #ffffff 4px;
+}
+
+.foods:hover{
+    color: transparent;
+    transition: 0.1s;
+}
+
+.content {
+    position: absolute;
+    top: 60%;
+    transform: translate(100%, -50%);
+    background-color: #153e64cf;
+    padding: 2rem 1rem;
+    color: #fff;
+    text-align: right;
+    transition: 200ms ease-in-out transform;
+}
+
+h2 {
+    text-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+
+h3 {
+    text-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+}
+
+.line {
+    width: 70px;
+    height: 5px;
+    background-color: #fff;
+    margin: 1rem 0 1rem auto;
+}
+p {
+    font-size: .9rem;
+    text-shadow: 0 0 .2rem rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+}
+
+
+/* footer */
+footer {
+    background-color: #01182d;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    margin-top: 30px;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #f39c12; 
+}
